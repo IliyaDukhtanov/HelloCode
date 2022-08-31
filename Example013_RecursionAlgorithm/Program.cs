@@ -17,7 +17,7 @@ for (int rows = 0; rows < 2; rows++)
 }*/
 
 
-/*void PrintArray(int[,] matr)   /метод создания двумерного массива
+void PrintArray(int[,] matr)   //метод создания двумерного массива
 {
     for (int i = 0; i < matr.GetLength(0); i++)
     {
@@ -29,7 +29,7 @@ for (int rows = 0; rows < 2; rows++)
     }
 }
 
-void FillArray(int[,] matr) метод заполнения массива случайными числами
+void FillArray(int[,] matr) //метод заполнения массива случайными числами
 {
     for (int i = 0; i < matr.GetLength(0); i++)
     {
@@ -44,10 +44,10 @@ int[,] matrix = new int[3, 4];
 PrintArray(matrix);
 FillArray(matrix);
 Console.WriteLine();
-PrintArray(matrix);*/
+PrintArray(matrix);
 
 //Закрвшивание внутри контура
-int[,] pic = new int[,]
+/*int[,] pic = new int[,]
 {
     {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
     {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
@@ -92,7 +92,7 @@ void FillImage(int row, int col)
 {
     if (pic[row, col] == 0)
     {
-         pic[row, col] = 1;
+        pic[row, col] = 1;
         FillImage(row - 1, col);
         FillImage(row, col - 1);
         FillImage(row + 1, col);
@@ -101,7 +101,7 @@ void FillImage(int row, int col)
 }
 PrintImage(pic);
 FillImage(13, 13);
-PrintImage(pic);
+PrintImage(pic);*/
 
 //Рекурсия вычисления факториала
 /*double Factorial(int n)
